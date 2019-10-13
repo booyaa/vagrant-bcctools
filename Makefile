@@ -5,4 +5,4 @@ clean:
 .PHONY: setup
 setup:
 	vagrant up
-	@echo use `vagrant ssh` to connect
+	@echo "use 'vagrant ssh' to connect"
