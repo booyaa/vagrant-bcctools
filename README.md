@@ -53,6 +53,17 @@ to tear down
 make clean
 ```
 
+### Running BCC tools
+The tools are installed in `/sbin` (`/usr/sbin` in Ubuntu 18.04) with a -bpfcc extension. More information can be found in the [BCC install docs](https://github.com/iovisor/bcc/blob/master/INSTALL.md#ubuntu---binary).
+
+After `vagrant ssh`, you can run any tool such as `execsnoop` by calling it directly or from the `/usr/sbin` directory. e.g.
+
+```sh
+sudo execsnoop-bpfcc
+
+sudo /usr/sbin/execsnoop-bpfcc
+```
+
 ## copyright
 
 2019 &copy; Mark Sta Ana
